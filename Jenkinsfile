@@ -5,8 +5,8 @@ pipeline{
 				stage('build') {
 					steps {
 					
-					bat 'set root=C:\\'
-					bat 'cd /d %root%'
+					
+					bat 'chdir /d C:\Work'
 					bat 'md heybhagwan'
 					
 					}
