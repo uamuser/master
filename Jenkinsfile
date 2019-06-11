@@ -5,8 +5,8 @@ pipeline{
 				stage('build') {
 					steps {
 					
-					bat 'C:\'
-					bat 'md heybhagwan'
+			
+					bat 'md C:\heybhagwan'
 					
 					}
 				
