@@ -6,7 +6,7 @@ pipeline{
 					steps {
 					
 					bat 'set root=C:\\'
-					bat 'CD /D %root%'
+					bat 'CD %root%'
 					bat 'md heybhagwan'
 					
 					}
