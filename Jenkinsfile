@@ -7,7 +7,7 @@ pipeline{
 					
 					
 			
-					bat 'md ../../../../heybhagwan'
+					bat 'cd ../..'
 					
 					}
 				
