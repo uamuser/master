@@ -5,7 +5,7 @@ pipeline{
 				stage('build') {
 					steps {
 					
-			sh ' mkdir C:\abc'
+			sh ' mkdir C:/abc'
 					}
 				
 				
