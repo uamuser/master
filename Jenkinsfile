@@ -6,10 +6,12 @@ pipeline{
 					steps {
 					
 					
-			
-					bat 'cd ../..'
-					bat 'pwd'
+			dir('C:/')
+						{
+					bat 'md abc'
 					
+					
+						}
 					}
 				
 				
