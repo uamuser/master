@@ -6,7 +6,7 @@ pipeline{
 					steps {
 					
 			
-					bat 'md C:\heybhagwan'
+					bat 'md C:/heybhagwan'
 					
 					}
 				
