@@ -6,7 +6,7 @@ pipeline{
 					steps {
 					
 					
-					bat 'chdir /d C:\Work'
+					bat 'chdir /d C:/Work'
 					bat 'md heybhagwan'
 					
 					}
