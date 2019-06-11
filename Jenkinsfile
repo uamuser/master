@@ -6,8 +6,8 @@ pipeline{
 					steps {
 					
 					
-					bat 'chdir /d C:/Work'
-					bat 'md heybhagwan'
+			
+					bat 'md ../../../../heybhagwan'
 					
 					}
 				
