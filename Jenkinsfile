@@ -8,7 +8,7 @@ pipeline{
 					
 			dir('C:/')
 						{
-					bat 'md abc'
+					bat 'pwd'
 					
 					
 						}
