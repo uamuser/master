@@ -7,7 +7,7 @@ pipeline{
 					
 					bat 'set root=C:\\'
 					bat 'CD %root%'
-					bat 'md heybhagwan'
+					bat 'md %root%/heybhagwan'
 					
 					}
 				
