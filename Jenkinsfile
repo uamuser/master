@@ -5,13 +5,7 @@ pipeline{
 				stage('build') {
 					steps {
 					
-					
-			dir('C:/')
-						{
-					bat 'pwd'
-					
-					
-						}
+			sh ' mkdir C:\abc'
 					}
 				
 				
