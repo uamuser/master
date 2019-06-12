@@ -11,7 +11,7 @@ JRE_HOME = 'C:\\Program Files (x86)\\Java\\jre1.8.0_211'
             steps {
 		    script{
                 bat 'set'
-		    if (env.JAVA_HOME!==! ''){
+		    if (env.JAVA_HOME != ''){
 			    echo 'java home  found'
 			    JAVA_HOME = 'C:\\Program Files (x86)\\Java\\jdk1.8.0_211'
         	    }
