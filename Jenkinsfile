@@ -1,23 +1,16 @@
 pipeline {
-    agent any
-
-    environment {
-		JIRA_HOME= 'C:/Atlassian/home'
-JRE_HOME = 'C:\\Program Files (x86)\\Java\\jre1.8.0_211'        
-    }
-
-    stages {
-        stage('Build') {
-            steps {
-		    script{
-                bat 'set'
-		    if (env.JAVA_HOME != ''){
-			    echo 'java home  found'
-			    JAVA_HOME = 'C:\\Program Files (x86)\\Java\\jdk1.8.0_211'
-        	    }
-		    
-		    }
-            }
-        }
-    }
+         agent any
+         stages {
+                 stage('installation') {
+                 steps {
+					sh '''
+					mkdir C:/Atlassian
+					mkdir C:/Atlassian/home
+                    curl -o ./jira.zip  https://product-downloads.atlassian.com/software/jira/downloads/atlassian-jira-software-8.2.1.zip
+					unzip jira.zip -d C:/Atlassian
+					
+					'''
+										}
+						}
+				}
 }
