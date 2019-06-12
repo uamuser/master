@@ -9,6 +9,7 @@ JRE_HOME = 'C:\\Program Files (x86)\\Java\\jre1.8.0_211'
     stages {
         stage('Build') {
             steps {
+		    script{
                 bat 'set'
 		    if (env.JAVA_HOME==''){
 			    echo 'java home found'
@@ -18,7 +19,7 @@ JRE_HOME = 'C:\\Program Files (x86)\\Java\\jre1.8.0_211'
 			    echo 'jre home not found'
 			    JRE_HOME = 'C:\\Program Files (x86)\\Java\\jre1.8.0_211'
         	    }
-
+		    }
             }
         }
     }
