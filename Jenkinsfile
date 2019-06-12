@@ -2,14 +2,16 @@ pipeline {
     agent any
 
     environment {
-        DISABLE_AUTH = 'true'
-        DB_ENGINE    = 'sqlite'
+		JIRA_HOME= 'C:/Atlassian/home'
+        JAVA_HOME = 'C:\Program Files (x86)\Java\jre1.8.0_211'
+        JRE_HOME  = 'C:\Program Files (x86)\Java\jre1.8.0_211'
     }
 
     stages {
         stage('Build') {
             steps {
-                sh 'printenv'
+                bat 'set'
+				echo "PATH=${JAVA_HOME}"
             }
         }
     }
