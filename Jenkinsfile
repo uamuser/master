@@ -12,7 +12,7 @@ pipeline {
         }
     }
     stages('check and start') {
-
+        parallel{
         stage('Environment variable'){
             steps{
             environment {
@@ -22,14 +22,11 @@ pipeline {
             }
             }
         }
-    }
-    stages{
         stage('start jira') {
             steps {
                 bat 'C:\\Atlassian\\jira\\bin\\start-jira.bat'
-
             }
         }
     }
-
+    }
 }
