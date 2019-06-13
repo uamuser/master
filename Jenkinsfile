@@ -6,8 +6,8 @@ pipeline {
                 sh '''
                 mkdir C:/Atlassian
                 mkdir C:/Atlassian/home
-                cp -r C:/shared/jdk* C:/java 
-                cp -r C:/shared/jira C:/Atlassian
+                cp -r C:\\shared\\jdk* C:\\java 
+                cp -r C:\\shared\\jira C:\\Atlassian
                 '''
             }
         }
