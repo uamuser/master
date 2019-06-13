@@ -15,10 +15,12 @@ pipeline {
     stages('check and start') {
 
         stage('Environment variable'){
+            steps{
             environment {
                 JIRA_HOME = 'C:/Atlassian/home'
                 JAVA_HOME = 'C:\\Java\\jre1.8.0_211'
                 JRE_HOME = 'C:\\Java\\jre1.8.0_211'
+            }
             }
         }
 
