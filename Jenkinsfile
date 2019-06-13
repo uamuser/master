@@ -2,8 +2,8 @@ pipeline {
     agent any
 	 environment {
                 JIRA_HOME = 'C:/Atlassian/home'
-                JAVA_HOME = 'C:/Java/jdk1.8'
-                JRE_HOME = 'C:/Java/jdk1.8/jre'
+                JAVA_HOME = 'C:/java/jdk1.8'
+                JRE_HOME = 'C:/java/jdk1.8/jre'
             }
     stages {
        	stage('installation') {
@@ -16,10 +16,6 @@ pipeline {
                 '''
             }
         }
-        stage('start jira') {
-            steps {
-                bat 'C:\\Atlassian\\jira\\bin\\start-jira.bat'
-            }
-    }
+        
 }
 }
