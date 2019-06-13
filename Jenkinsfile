@@ -6,7 +6,8 @@ pipeline {
                 JRE_HOME = 'C:/Java/jdk1.8/jre'
             }
     stages {
-       	steps {
+       	stage('installation') {
+		steps {
                 sh '''
                 mkdir C:/Atlassian
                 mkdir C:/Atlassian/home
