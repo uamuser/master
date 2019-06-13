@@ -22,18 +22,14 @@ pipeline {
             }
             }
         }
-
+    }
+    stages{
         stage('start jira') {
             steps {
                 bat 'C:\\Atlassian\\jira\\bin\\start-jira.bat'
 
             }
         }
-
-
-
     }
-
-
 
 }
