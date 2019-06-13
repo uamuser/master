@@ -14,7 +14,7 @@ pipeline {
     }
     stages('check and start') {
 
-        stage(Environment variable '){
+        stage('Environment variable'){
             environment {
                 JIRA_HOME = 'C:/Atlassian/home'
                 JAVA_HOME = 'C:\Java\jre1.8.0_211'
@@ -24,7 +24,7 @@ pipeline {
 
         stage('start jira') {
             steps {
-                bat ' C:\Atlassian\jira\bin\start-jira.bat'
+                bat 'C:\\Atlassian\\jira\\bin\\start-jira.bat'
 
             }
         }
