@@ -9,11 +9,8 @@ pipeline {
        	stage('installation') {
 		steps {
                 sh '''
-                mkdir C:/Atlassian
-                mkdir C:/Atlassian/home
                 cp -r C:/shared/java C:/java
-		cp -r C:/shared/jira C:/Atlassian
-                '''
+		'''
             }
         }
         
