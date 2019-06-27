@@ -12,7 +12,7 @@ pipeline {
                 sh '''
                 mkdir C:/Software
 				cp -r C:/shared/Apache C:/Software
-				cd C:\Software\Apache24\bin
+				cd C:/Software/Apache24/bin
 				httpd -k install
                 '''
             }
