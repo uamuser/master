@@ -6,20 +6,19 @@ pipeline {
                 JRE_HOME = 'C:/java/jdk1.8/jre'
             }
     stages {
-       	stage('jira-installation') {
+	    
+       	stage('Apache-installation') {
 		steps {
                 sh '''
-                mkdir C:/Atlassian
-                mkdir C:/Atlassian/home
-                cp -r C:/shared/java C:/java
-				cp -r C:/shared/jira C:/Atlassian
+                mkdir C:/Software
+				cp -r C:/shared/Apache C:/Software
+				cd C:\Software\Apache24\bin
+				httpd -k install
                 '''
             }
-        }
-        stage('launch-jira') {
-            steps {
-                bat 'C:\\Atlassian\\jira\\bin\\start-jira.bat'
-            }
+        
 		}
+	    
+	    
 	}
 }
