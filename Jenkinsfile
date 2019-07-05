@@ -2,8 +2,7 @@ pipeline {
     agent any
 	 environment {
                 JIRA_HOME = 'C:/Atlassian/home'
-                JAVA_HOME = 'C:/java/jdk1.8'
-                JRE_HOME = 'C:/java/jdk1.8/jre'
+                
             }
     stages {
        	stage('jira-installation') {
@@ -11,8 +10,8 @@ pipeline {
                 sh '''
                 mkdir C:/Atlassian
                 mkdir C:/Atlassian/home
-                cp -r C:/shared/java C:/java
-				cp -r C:/shared/jira C:/Atlassian
+              
+		cp -r C:/shared/jira C:/Atlassian
                 '''
             }
         }
